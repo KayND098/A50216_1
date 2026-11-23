@@ -2,7 +2,7 @@
 
 - **Họ và tên Sinh viên A**: KayND098
 - **Mã số sinh viên**: A50216
-- **Link repository GitHub**: https://github.com/KayND098/A50216
+- **Link repository GitHub**: https://github.com/KayND098/A50216_1
 - **Thành viên B**: Collaborator
 
 ---
@@ -166,9 +166,9 @@ git stash drop 'stash@{0}'
    ```
    **Lỗi nhận được**:
    ```text
-   To https://github.com/KayND098/A50216.git
+   To https://github.com/KayND098/A50216_1.git
     ! [rejected]        feature/4-div -> feature/4-div (non-fast-forward)
-   error: failed to push some refs to 'https://github.com/KayND098/A50216.git'
+   error: failed to push some refs to 'https://github.com/KayND098/A50216_1.git'
    hint: Updates were rejected because the tip of your current branch is behind
    hint: its remote counterpart. If you want to integrate the remote changes,
    hint: use 'git pull' before pushing again.
@@ -183,12 +183,13 @@ git stash drop 'stash@{0}'
    ```
    **Kết quả đồ thị commit (Lịch sử có Merge commit dạng mắt lưới)**:
    ```text
-   *   709fc67 Merge branch 'feature/4-div' of origin into draft/4-div-merge
+   *   e336c40 Merge branch 'feature/4-div' of origin into draft/4-div-merge
    |\  
-   | * ff36549 fix(calc): change div error message to Loi: chia cho 0
-   * | 9dfb6c0 feat(calc): update div error message to ZeroDivision
+   | * 376bb37 fix(calc): change div error message to Loi: chia cho 0
+   * | 5c7ea93 feat(calc): update div error message to ZeroDivision
    |/  
-   * b228533 feat(calc): add div function with error Khong chia duoc
+   * 664b036 feat(calc): add div function with error Khong chia duoc
+   * 049ed75 Initial commit
    ```
 
 5. **Trên nhánh thật `feature/4-div`: `git pull --rebase` và giải quyết xung đột**:
@@ -219,9 +220,10 @@ git stash drop 'stash@{0}'
      ```
    **Kết quả đồ thị commit sau Rebase (Lịch sử thẳng đẹp)**:
    ```text
-   * bc73857 feat(calc): update div error message to ZeroDivision
-   * ff36549 fix(calc): change div error message to Loi: chia cho 0
-   * b228533 feat(calc): add div function with error Khong chia duoc
+   * d55a884 feat(calc): update div error message to ZeroDivision
+   * 376bb37 fix(calc): change div error message to Loi: chia cho 0
+   * 664b036 feat(calc): add div function with error Khong chia duoc
+   * 049ed75 Initial commit
    ```
 
 ### 2. Biến thể bắt buộc: Hủy bỏ rebase (`git rebase --abort`)
