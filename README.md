@@ -23,3 +23,14 @@ pip install pytest
 # Chạy toàn bộ unit test
 pytest tests/
 ```
+@'
+
+### Luu y khi chay kiem thu
+
+1. Mo terminal tai thu muc goc du an.
+2. Cai pytest: `python -m pip install pytest`
+3. Chay kiem thu: `python -m pytest -v tests/`
+4. Kiem tra ket qua test truoc khi tao Pull Request.
+'@ | Add-Content -Path README.md -Encoding UTF8
+
+git diff -- README.md
