@@ -23,3 +23,17 @@ pip install pytest
 # Chạy toàn bộ unit test
 pytest tests/
 ```
+
+## Huong dan kiem thu bo sung
+
+1. Mo terminal tai thu muc goc du an.
+2. Cai pytest: python -m pip install pytest
+3. Chay test: python -m pytest -v tests/
+4. Dam bao tat ca test deu PASS truoc khi tao Pull Request.
+
+
+## Huong dan kiem thu bo sung
+
+1. Cai pytest: python -m pip install pytest
+2. Chay test: python -m pytest -v tests/
+3. Kiem tra tat ca test deu PASS truoc khi tao Pull Request.
